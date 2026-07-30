@@ -120,7 +120,8 @@ This information allows:
 - More accurate turning
 - Reduction of accumulated steering error
 
-##Pixy2 Camera
+## Pixy2 Camera
+
 -Function: Detects the red and green pillars on the competition field.
 -Location: Mounted at the front of the robot to maximize the field of view.
 -Reason for selection: Provides fast and reliable real-time color recognition, allowing the robot to identify the pillar color before executing a turn.
