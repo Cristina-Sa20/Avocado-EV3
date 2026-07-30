@@ -123,11 +123,17 @@ This information allows:
 ## Pixy2 Camera
 
 -Function: Detects the red and green pillars on the competition field.
+
 -Location: Mounted at the front of the robot to maximize the field of view.
+
 -Reason for selection: Provides fast and reliable real-time color recognition, allowing the robot to identify the pillar color before executing a turn.
+
 -Role in the robot:
+
 🟢 Green pillar → Left turn
+
 🔴 Red pillar → Right turn
+
 -Advantage: Reduces processing time compared to image processing and improves navigation accuracy during obstacle avoidance.
 
 ---
