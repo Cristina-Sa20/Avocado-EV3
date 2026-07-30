@@ -176,6 +176,8 @@ If no custom parts are required, this folder documents the mechanical design.
 
 Contains official photographs of the team.
 
+https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/t-photos/Alan%20Stiven%20Salda%C3%B1a%20Ortega.md
+
 ## v-photos
 
 Contains photographs of the vehicle from every required angle.
