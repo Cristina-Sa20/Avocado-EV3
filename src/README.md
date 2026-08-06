@@ -1,4 +1,3 @@
 Control software
 ====
-
-This directory contains the code for our runs, we will be updating the code for a run and separating by rounds.
+In this commit we will be explaining in detail our different routines, algorithms, logics analisis and our main programs!
