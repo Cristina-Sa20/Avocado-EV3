@@ -36,7 +36,7 @@ The robot continuously collects information from its sensors, processes that inf
 
 # Hardware Design
 
-The robot was designed using LEGO Mindstorms EV3 components combined with a steering system based on the Ackermann principle.
+The robot was designed using LEGO Mindstorms EV3 components from LEGO´s base and expansion sets, combined with some 3D printed materials and as a third-party element a Pixy Camera.
 
 Our design priorities were:
 
@@ -45,8 +45,66 @@ Our design priorities were:
 - Easy maintenance
 - Modular construction
 - Fast replacement of components
+- Reliable chasis structure
 
-The chassis allows quick access to motors, sensors, and cables during testing and competition.
+Our chassis allows us a quick access to motors, sensors, and cables during testing and competition. We focused on an easy access to the different components of the robot maintaining a steady and reliable structure.
+
+#Hardware Mechanisms
+
+Throught a lot of investigation, testing, evaluation and sketches we came down to this different mechanisms that were optimal and aligned with the vision we had for our robot:
+
+- Ackerman Principle:
+  At first we didn´t knew what ackerman principle was and how it worked in vehicles, the variations this principle had.
+  We tested which one of it would be the one that fitted our robot and concluded that it was the Ackerman principle.
+
+
+
+
+  After some testing we noticed different problems with our ackerman;
+
+  1. Our steering was colliding with the robot´s chassis
+     We ended up fixing this by putting 2 axles limiting the angle the steering could make, with this we still could make an optimal turn without the steering         and wheels colliding with our chassis.
+
+  2. Our steering had too much backlash
+     Our first prototype had its medium motor connected to the steering by a 90° with gears 1:1, it created to us 2 problems:
+     - First, the gears and their backlash were making the robot had a bad steering when we didnt had any correction, the robot just running forward
+       had a lot of trouble to not go to its right side.
+
+     -The second problem it created was that the correction that our wallfollower or gyrostraight gave to the steering motor, had a delay and
+      was mutliplying the error it accumulated.
+
+    So our solution to this problem in the steering was to just delete the 90° 1:1 gears and just plug in directltly the motor to the steering, it made us change     part of the robot´s build but the correction and the smooth movement where completely worth it.
+
+
+- Differential gear
+  We decided to use differential gears because it was the mechanisim that most fitted the ackerman to help the robot have smooth turns, we ended up using
+  the LEGO differential gear, we came to the conclusion that building one would useless because of how easy it would be for it to break when we had a relaible      one already.
+
+
+
+- Moving Ultrasonic sensor
+  We evaluated two different options for the ultrasonic sensor position that where:
+
+  1. Using 2 ultrasonic sensors to read both walls at the same time
+  2. Have only 1 ultrasonic sensor to read one wall at a time.
+ 
+  Here are the Pros and Cons of each one
+  2 ultrasonic
+
+                    Pros                                                                           Cons
+- Precise correction to maintain between each wall                      - Would take 2 different ports leaving nothing for the camera or gyro
+- Could be connected to 1 port using a multiplexer                      - We couldnt afford a multiplexer and time was running.
+
+
+1 movable ultrasonic
+
+                     Pros                                                                           Cons
+- 1 port only and would have to buy multiplexer                                - Could only focus on 1 wall at a time
+- Just 1 input for PD control leaving it easier to design the PD               - Could be imprecise the moving of the sensor throught the runs.
+
+After a week of evaluation we came down to the conclusion that we where going to use the movable ultrasonic sensor, the clock was ticking for the regional competition so buying a multiplexer wasnt really and option at that time.
+
+After building it we decided to still use the ultrasonic sensor to know and help the robot locate itself in the field, we wanted it to be as autonomous as it could be, and it ended up being almost the same as having 2 ultrasonic sensor, we just trades 1 sensor slot for about 7 seconds that the robot uses doing the reading at the beginning of the rounds.
 
 ---
 
@@ -105,7 +163,6 @@ The color sensor detects the black guide lines of the WRO field.
 
 These detections help the robot:
 
-- Maintain lane position
 - Detect reference points
 - Improve navigation consistency
 
@@ -126,15 +183,15 @@ This information allows:
 
 -Location: Mounted at the front of the robot to maximize the field of view.
 
--Reason for selection: Provides fast and reliable real-time color recognition, allowing the robot to identify the pillar color before executing a turn.
+-Reason for selection: Provides fast and reliable real-time color recognition, allowing the robot to identify the pillar color for the robot to make a decision for the turn.
 
 -Role in the robot:
 
-🟢 Green pillar → Left turn
+Green pillar → Left turn
 
-🔴 Red pillar → Right turn
+Red pillar → Right turn
 
--Advantage: Reduces processing time compared to image processing and improves navigation accuracy during obstacle avoidance.
+-Advantage: Reduces processing time compared to image processing.
 
 ---
 
@@ -146,45 +203,21 @@ The program continuously executes a control loop where sensor information is acq
 
 The software is organized into modules to facilitate maintenance and future improvements.
 
-The source code is located inside the `/src` directory.
-
 ---
 
 # Repository Structure
 
-The repository is organized following the official WRO Future Engineers guidelines.
-
 ## src
-
-Contains all software used by the robot.
-
-This includes navigation algorithms, sensor management, steering control, motor control, and autonomous decision making.
 
 ## schemes
 
-Contains wiring diagrams showing how every electronic component is connected.
-
-These diagrams allow another team to reproduce the electrical configuration.
-
 ## models
-
-Contains CAD models and files used for manufacturing custom mechanical parts.
-
-If no custom parts are required, this folder documents the mechanical design.
 
 ## t-photos
 
-Contains official photographs of the team.
-
-
 ## v-photos
 
-Contains photographs of the vehicle from every required angle.
-
 ## video
-
-Contains links to the official demonstration videos.
-
 ---
 
 # Robot Construction
@@ -193,10 +226,10 @@ The robot was assembled using LEGO structural components combined with a steerin
 
 Particular attention was given to:
 
+- Solid structure
 - Center of gravity
-- Cable organization
 - Sensor positioning
-- Accessibility for maintenance
+- Fast replacement components
 
 The modular design allows damaged components to be replaced quickly without rebuilding the complete vehicle.
 
@@ -211,10 +244,11 @@ The testing process included:
 - Straight-line driving
 - Cornering accuracy
 - Gyroscope calibration
-- Color sensor verification
+- Color sensor calibration in different ambients
 - Obstacle detection
 - Steering adjustment
 - Complete laps
+- Drift accummulated with each round
 
 After every testing session, software and mechanical adjustments were performed to improve consistency.
 
@@ -222,25 +256,8 @@ After every testing session, software and mechanical adjustments were performed 
 
 # Future Improvements
 
-Future versions of the robot may include:
-
-- Improved obstacle detection algorithms
-- Better steering calibration
-- Faster decision-making routines
-- More efficient cable management
-- Improved mechanical rigidity
-
 ---
-
 # Demonstration Videos
-
-Open Challenge
-
-(Link)
-
-Obstacle Challenge
-
-(Link)
 
 ---
 
