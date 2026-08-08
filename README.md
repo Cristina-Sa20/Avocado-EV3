@@ -273,8 +273,8 @@ This section will provide a general explanation, using a comparative table, of h
 | Test | Result| 
 | :--- | :---: | 
 | **Prototype 1** | Out of 10 laps, only 5 were completed correctly | 
-| **Soporte** | Comunidad | 
-| **Almacenamiento** | 5 GB | 
+| **PID Change** | Out of 10 laps, only 4 were completed | 
+| **Sensor Replacement** | 10 laps | 
 
 
 
