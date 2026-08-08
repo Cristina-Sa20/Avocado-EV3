@@ -67,7 +67,7 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
   2. Our steering had too much backlash
      Our first prototype had its medium motor connected to the steering by a 90° with gears 1:1, it created to us 2 problems:
      
-     - First, the gears and their backlash were making the robot had a bad steering when we didnt had any correction, the robot just running forward
+     -First, the gears and their backlash were making the robot had a bad steering when we didnt had any correction, the robot just running forward
        had a lot of trouble to not go to its right side.
 
      -The second problem it created was that the correction that our wallfollower or gyrostraight gave to the steering motor, had a delay and
@@ -93,14 +93,14 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
 
 ## 1.2
 
-             Pros                                                             Cons
+             Pros                                                            Cons
 - Precise correction to maintain between each wall                      - Would take 2 different ports leaving nothing for the camera or gyro
 - Could be connected to 1 port using a multiplexer                      - We couldnt afford a multiplexer and time was running.
 
 
 1 movable ultrasonic
 
-     Pros                                                                           Cons
+            Pros                                                              Cons
 - 1 port only and would have to buy multiplexer                                - Could only focus on 1 wall at a time
 - Just 1 input for PD control leaving it easier to design the PD               - Could be imprecise the moving of the sensor throught the runs.
 
