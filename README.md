@@ -300,6 +300,17 @@ This section will provide a general explanation, using a comparative table, of h
 |5| -100|-120|-45|1:05|
 |6| -100|-120|-20|1:08|
 
+
+## 9.4 Boundary cases
+
+There are several borderline cases that, as the name suggests, are unlikely to happen, but if these occur, they could be the following.
+
+If the pillars disappear, the robot would continue straight and go around not to detect any object, but with the probability that it will advance slowly compared to its normal speed.
+
+If the camera fails, it would be the most extreme case and that you least want, but in that case we would choose to say STOP, since we are aware that we are not prepared for something like that.
+
+If the color sensor stopped detecting the alteration that would be observed are the infinite revolutions, since with the color sensor we are guided by how many revolutions the robot must give and it can stop, but if this sensor the robot would enter a loop until it turned off manually.
+
 ---
 
 # Future Improvements
