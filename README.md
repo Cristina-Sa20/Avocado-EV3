@@ -93,10 +93,13 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
 
 ## 1.2 Pros and Cons
 
-             Pros                                                            Cons
-- Precise correction to maintain between each wall                      - Would take 2 different ports leaving nothing for the camera or gyro
-- Could be connected to 1 port using a multiplexer                      - We couldnt afford a multiplexer and time was running.
+| Pros | Cons | Opción B |
+| :--- | :---: | ---: |
+| Precise correction to maintain between each wall | Would take 2 different ports leaving nothing for the camera or gyro |
+| Could be connected to 1 port using a multiplexer| We couldnt afford a multiplexer and time was running.
+ | 
 
+             
 
 1 movable ultrasonic
 
