@@ -91,7 +91,7 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
   Here are the Pros and Cons of each one
   2 ultrasonic
 
-## 1.2
+## 1.2 Pros and Cons
 
              Pros                                                            Cons
 - Precise correction to maintain between each wall                      - Would take 2 different ports leaving nothing for the camera or gyro
