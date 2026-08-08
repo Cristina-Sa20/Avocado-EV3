@@ -49,7 +49,7 @@ Our design priorities were:
 
 Our chassis allows us a quick access to motors, sensors, and cables during testing and competition. We focused on an easy access to the different components of the robot maintaining a steady and reliable structure.
 
-#1.1Hardware Mechanisms
+# 1.1 Hardware Mechanisms
 
 Throught a lot of investigation, testing, evaluation and sketches we came down to this different mechanisms that were optimal and aligned with the vision we had for our robot:
 
@@ -91,7 +91,8 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
   Here are the Pros and Cons of each one
   2 ultrasonic
 
-1.2
+# 1.2
+
   Pros                                                                           Cons
 - Precise correction to maintain between each wall                      - Would take 2 different ports leaving nothing for the camera or gyro
 - Could be connected to 1 port using a multiplexer                      - We couldnt afford a multiplexer and time was running.
@@ -99,7 +100,7 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
 
 1 movable ultrasonic
 
-                     Pros                                                                           Cons
+     Pros                                                                           Cons
 - 1 port only and would have to buy multiplexer                                - Could only focus on 1 wall at a time
 - Just 1 input for PD control leaving it easier to design the PD               - Could be imprecise the moving of the sensor throught the runs.
 
