@@ -94,7 +94,7 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
 ## 1.2 Pros and Cons with 2 ultrasonic
 
 | Pros | Cons | 
-| :--- | :---: | ---: |
+| :--- | :---: |
 | Precise correction to maintain between each wall | Would take 2 different ports leaving nothing for the camera or gyro |
 | Could be connected to 1 port using a multiplexer| We couldnt afford a multiplexer and time was running.
  | 
@@ -104,7 +104,7 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
 ## 1.3 Pros and Cons with 1 ultrasonic
 
 | Pros | Cons | 
-| :--- | :---: | ---: |
+| :--- | :---: |
 | 1 port only and would have to buy multiplexer | Could only focus on 1 wall at a time |
 | Just 1 input for PD control leaving it easier to design the PD| Could be imprecise the moving of the sensor throught the runs.
  | 
