@@ -49,7 +49,7 @@ Our design priorities were:
 
 Our chassis allows us a quick access to motors, sensors, and cables during testing and competition. We focused on an easy access to the different components of the robot maintaining a steady and reliable structure.
 
-# 1.1 Hardware Mechanisms
+## 1.1 Hardware Mechanisms
 
 Throught a lot of investigation, testing, evaluation and sketches we came down to this different mechanisms that were optimal and aligned with the vision we had for our robot:
 
@@ -91,9 +91,9 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
   Here are the Pros and Cons of each one
   2 ultrasonic
 
-# 1.2
+## 1.2
 
-  Pros                                                                           Cons
+             Pros                                                             Cons
 - Precise correction to maintain between each wall                      - Would take 2 different ports leaving nothing for the camera or gyro
 - Could be connected to 1 port using a multiplexer                      - We couldnt afford a multiplexer and time was running.
 
@@ -254,7 +254,7 @@ The testing process included:
 
 After every testing session, software and mechanical adjustments were performed to improve consistency.
 
-##9.1 Test workflow
+## 9.1 Test workflow
 
 Our goal in every practice was to correct our mistakes. During the first few weeks of practice, we didn’t use any notes at all — we did everything from memory — but this method yielded mediocre results, as mistakes we thought we’d already corrected kept cropping up again.
 
