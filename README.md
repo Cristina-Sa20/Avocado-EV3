@@ -262,6 +262,15 @@ Seeing this, we started taking notes: in a notebook, we wrote down the test numb
 
 We continued using this method until after the first competition, when we decided to create tables in our notes listing the speed, kp, and kd values, and began timing the runs. However, we also had a separate table with the same values from the second method (speed, lap description, and direction). Using the third method—with two tables—is where we’ve seen the best results, correcting errors more quickly than with the first two methods. We decided to include pk, and kd and quredtos are important components of the calibration.
 
+## 9.2 Test demonstration
+
+This section will provide a general explanation, using a comparative table, of how these practices have evolved.
+
+              test               result
+
+- Prototype 1                    - Out of 10 laps, only 5 were completed correctly 
+
+
 ---
 
 # Future Improvements
