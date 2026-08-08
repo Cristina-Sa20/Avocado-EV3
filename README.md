@@ -292,7 +292,7 @@ This section will provide a general explanation, using a comparative table, of h
 ## 9.3 Metrics Counterclockwise with prototype 2
 
 | Laps | Velocity |Kd | Kp| Time | Description |
-| :——-| :——-: | :——-:| :——-:|:---:|:---:
+| :---:| :---: | :---:| :---:|:---:|:---:
 |1| -60|
 |2| - 70|
 |3| - 90|
