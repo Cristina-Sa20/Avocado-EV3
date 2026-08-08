@@ -267,7 +267,7 @@ We continued using this method until after the first competition, when we decide
 This section will provide a general explanation, using a comparative table, of how these practices have evolved.
 
               test               result
-
+:
 - Prototype 1                    - Out of 10 laps, only 5 were completed correctly 
 
 
