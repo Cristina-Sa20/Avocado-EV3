@@ -34,7 +34,7 @@ The robot continuously collects information from its sensors, processes that inf
 
 ---
 
-# Hardware Design
+# 1.Hardware Design
 
 The robot was designed using LEGO Mindstorms EV3 components from LEGO´s base and expansion sets, combined with some 3D printed materials and as a third-party element a Pixy Camera.
 
@@ -49,14 +49,13 @@ Our design priorities were:
 
 Our chassis allows us a quick access to motors, sensors, and cables during testing and competition. We focused on an easy access to the different components of the robot maintaining a steady and reliable structure.
 
-#Hardware Mechanisms
+#1.1Hardware Mechanisms
 
 Throught a lot of investigation, testing, evaluation and sketches we came down to this different mechanisms that were optimal and aligned with the vision we had for our robot:
 
 - Ackerman Principle:
   At first we didn´t knew what ackerman principle was and how it worked in vehicles, the variations this principle had.
   We tested which one of it would be the one that fitted our robot and concluded that it was the Ackerman principle.
-
 
 
 
@@ -67,6 +66,7 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
 
   2. Our steering had too much backlash
      Our first prototype had its medium motor connected to the steering by a 90° with gears 1:1, it created to us 2 problems:
+     
      - First, the gears and their backlash were making the robot had a bad steering when we didnt had any correction, the robot just running forward
        had a lot of trouble to not go to its right side.
 
@@ -91,7 +91,8 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
   Here are the Pros and Cons of each one
   2 ultrasonic
 
-                    Pros                                                                           Cons
+1.2
+  Pros                                                                           Cons
 - Precise correction to maintain between each wall                      - Would take 2 different ports leaving nothing for the camera or gyro
 - Could be connected to 1 port using a multiplexer                      - We couldnt afford a multiplexer and time was running.
 
@@ -108,7 +109,7 @@ After building it we decided to still use the ultrasonic sensor to know and help
 
 ---
 
-# Main Controller
+# 2.Main Controller
 
 The robot uses a LEGO Mindstorms EV3 intelligent brick as its central controller.
 
@@ -122,7 +123,7 @@ The EV3 is responsible for:
 
 ---
 
-# Drive System
+# 3.Drive System
 
 The vehicle uses rear-wheel drive powered by two EV3 Medium Motors.
 
@@ -135,7 +136,7 @@ This configuration provides:
 
 ---
 
-# Steering System
+# 4.Steering System
 
 The steering system follows the Ackermann steering principle.
 
@@ -145,11 +146,11 @@ This configuration improves turning accuracy and increases vehicle stability.
 
 ---
 
-# Sensors
+# 5.Sensors
 
 The robot incorporates several sensors that work together.
 
-## Ultrasonic Sensor
+## 5.1 Ultrasonic Sensor
 
 The ultrasonic sensor detects obstacles placed on the competition track.
 
@@ -157,7 +158,7 @@ It is mounted on a dynamic support that increases its field of view and allows b
 
 Its measurements are used to determine when the vehicle should begin obstacle avoidance maneuvers.
 
-## Color Sensor
+## 5.2 Color Sensor
 
 The color sensor detects the black guide lines of the WRO field.
 
@@ -166,7 +167,7 @@ These detections help the robot:
 - Detect reference points
 - Improve navigation consistency
 
-## Gyro Sensor
+## 5.3 Gyro Sensor
 
 The gyro sensor measures the robot's rotation angle.
 
@@ -177,7 +178,7 @@ This information allows:
 - More accurate turning
 - Reduction of accumulated steering error
 
-## Pixy2 Camera
+## 5.4 Pixy2 Camera
 
 -Function: Detects the red and green pillars on the competition field.
 
@@ -195,7 +196,7 @@ Red pillar → Right turn
 
 ---
 
-# Software
+# 6. Software
 
 The software was developed specifically for the WRO Future Engineers challenges.
 
@@ -205,22 +206,22 @@ The software is organized into modules to facilitate maintenance and future impr
 
 ---
 
-# Repository Structure
+# 7.Repository Structure
 
-## src
+## 7.1 src
 
-## schemes
+## 7.2 schemes
 
-## models
+## 7.3 models
 
-## t-photos
+## 7.4 t-photos
 
-## v-photos
+## 7.5 v-photos
 
-## video
+## 7.6 video
 ---
 
-# Robot Construction
+# 8.Robot Construction
 
 The robot was assembled using LEGO structural components combined with a steering mechanism based on Ackermann geometry.
 
@@ -235,7 +236,7 @@ The modular design allows damaged components to be replaced quickly without rebu
 
 ---
 
-# Testing
+# 9.Testing
 
 The robot was tested repeatedly before competition.
 
@@ -251,6 +252,14 @@ The testing process included:
 - Drift accummulated with each round
 
 After every testing session, software and mechanical adjustments were performed to improve consistency.
+
+##9.1 Test workflow
+
+Our goal in every practice was to correct our mistakes. During the first few weeks of practice, we didn’t use any notes at all — we did everything from memory — but this method yielded mediocre results, as mistakes we thought we’d already corrected kept cropping up again.
+
+Seeing this, we started taking notes: in a notebook, we wrote down the test number, the direction (clockwise/counterclockwise), recorded values such as speed and direction, and wrote brief explanations of how the robot behaved in each round, with the goal of achieving greater precision. However, this method was a bit confusing because the entries weren’t organized properly, so it was easy to mix up the tests in terms of clockwise and counterclockwise movements, but there was a noticeable improvement in the way the robot moved. 
+
+We continued using this method until after the first competition, when we decided to create tables in our notes listing the speed, kp, and kd values, and began timing the runs. However, we also had a separate table with the same values from the second method (speed, lap description, and direction). Using the third method—with two tables—is where we’ve seen the best results, correcting errors more quickly than with the first two methods. We decided to include pk, and kd and quredtos are important components of the calibration.
 
 ---
 
