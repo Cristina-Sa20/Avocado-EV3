@@ -239,6 +239,18 @@ Particular attention was given to:
 
 The modular design allows damaged components to be replaced quickly without rebuilding the complete vehicle.
 
+
+
+## 8.1 Power and voltage
+
+| Component | Voltage | Current (mA)|
+| :--- | :---: | ---: |
+| **EV3 Rechargeable Battery / Charger** | 10 V | 700 mA |
+| **Left Motor (EV3 Motor)** | 9 V |60 mA - 700 mA |
+| **Right Motor (EV3 Motor)** | 9 V | 60 mA - 700 mA|
+| **Pixy2 camara** | 5 V| 140 mA - 300 mA|
+| **Color Sensor (LEGO EV3 / Arduino)**| 4.3 to 5 V| 15 mA - 30 mA|
+
 ---
 
 # 9.Testing
