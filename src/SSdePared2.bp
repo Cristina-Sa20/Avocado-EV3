@@ -1,0 +1,13 @@
+While v>50 and v<90 or v>135 and v<180 
+  
+  v = Sensor.ReadPercent(2)
+  C = MotorC.GetTacho()
+  MotorB.SetPower(speed)
+  S1 = S1 = (Sensor.ReadPercent(1)- target)*8 
+  S2 = C
+  error = S1 - S2
+  correction = (kp*error)+(kd*(error-lasterror))
+  correction1 = 1 - correction
+  Motor.StartPower("c",correction1)
+  lasterror = error
+EndWhile

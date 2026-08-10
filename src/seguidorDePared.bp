@@ -1,0 +1,12 @@
+While
+  
+  C = MotorC.GetTacho()
+  MotorB.SetPower(Speed)
+  S1 = C
+  S2 = (target -Sensor.ReadPercent(1)*8
+  error = S1 - S2
+  Correction = (kp*error)+(kd*(error-lasterror))
+  Correction1 = 1 - Correction
+  Motor.StartPower("c",Correction1)
+  lasterror = error
+  EndWhile
