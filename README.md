@@ -152,16 +152,17 @@ This configuration improves turning accuracy and increases vehicle stability.
 ---
 
 # 5.Sensors
+This section explains the specifications of all sensors used for our robot.
 
-The robot incorporates several sensors that work together.
 
 ## 5.1 Ultrasonic Sensor
+We mainly use the ultrasonic sensor for 2 specific functions:
 
-The ultrasonic sensor detects obstacles placed on the competition track.
+One of these functions is in PD correction, where the ultrasonic sensor detecs the nearest side wall and keeps the same distance it measured from the wall. 
+The second function is to detect both walls to determine which quadrant of the canvas it is in, whether it's on the left, right, or in the middle. This allows the robot to know if it should adjust using the left wall or the right wall. 
 
-It is mounted on a dynamic support that increases its field of view and allows better obstacle detection.
-
-Its measurements are used to determine when the vehicle should begin obstacle avoidance maneuvers.
+¿Why did we decide to put it in that position?.
+We decided to place it in that position to give it mobility since, due to the limited number of sensors, we needed it to be mobile to help with the robot's automation. We also preferred to use it at the front because this helps us correct faster during turns, allowing the PD to work better.
 
 ## 5.2 Color Sensor
 
