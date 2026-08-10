@@ -167,7 +167,11 @@ We decided to place it in that position to give it mobility since, due to the li
 
 ## 5.2 Color Sensor
 The main function of the color sensor in the firs round is to count the blue and orange lines on the track to indicate how many sections the robot has gone through and when it's the last section so it can stop.
-In the second lap of the first round, and also in the obstacle round, its function is so detect the first line, whether blue or orange, to tell the robot if it needs to turn left or right. It´s  in that position because it's important that  this is the first input when the robot stars moving, since our robot's path heavily relies on floor  readings to determine the number of sections to travel, the turn direction, the robot's orientation, and the starting distance. So having the color sensor in the front is deal to receive this information as the first input.
+In the second lap of the first round, and also in the obstacle round, its function is so detect the first line, whether blue or orange, to tell the robot if it needs to turn left or right.
+
+¿Why did decide to put it in that position? 
+
+It´s  in that position because it's important that  this is the first input when the robot stars moving, since our robot's path heavily relies on floor  readings to determine the number of sections to travel, the turn direction, the robot's orientation, and the starting distance. So having the color sensor in the front is deal to receive this information as the first input.
 
 ## 5.3 Gyro Sensor
 
