@@ -185,22 +185,11 @@ This information allows:
 - Reduction of accumulated steering error
 
 ## 5.4 Pixy2 Camera
+Its main function is to detect obstacles and the color of those obstacles in order to avoid them. If it reads green, it will dodge to the left, and if it reads red, it will dodge to the right. 
 
--Function: Detects the red and green pillars on the competition field.
+¿Why did we decide to put it in that position?
 
--Location: Mounted at the front of the robot to maximize the field of view.
-
--Reason for selection: Provides fast and reliable real-time color recognition, allowing the robot to identify the pillar color for the robot to make a decision for the turn.
-
--Role in the robot:
-
-Green pillar → Left turn
-
-Red pillar → Right turn
-
--Advantage: Reduces processing time compared to image processing.
-
----
+We placed it in that position because what we want with the camera is to be able to read the traffic light blocks inside the track from a good distance, but prioritizing that the reading is at an ideal distance to make maneuver. The main problem has been the angle since the camera must avoid reading outside the track because that could be harmful.
 
 # 6. Software
 
