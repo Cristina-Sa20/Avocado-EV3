@@ -166,13 +166,8 @@ The second function is to detect both walls to determine which quadrant of the c
 We decided to place it in that position to give it mobility since, due to the limited number of sensors, we needed it to be mobile to help with the robot's automation. We also preferred to use it at the front because this helps us correct faster during turns, allowing the PD to work better.
 
 ## 5.2 Color Sensor
-
-The color sensor detects the black guide lines of the WRO field.
-
-These detections help the robot:
-
-- Detect reference points
-- Improve navigation consistency
+The main function of the color sensor in the firs round is to count the blue and orange lines on the track to indicate how many sections the robot has gone through and when it's the last section so it can stop.
+In the second lap of the first round, and also in the obstacle round, its function is so detect the first line, whether blue or orange, to tell the robot if it needs to turn left or right. It´s  in that position because it's important that  this is the first input when the robot stars moving, since our robot's path heavily relies on floor  readings to determine the number of sections to travel, the turn direction, the robot's orientation, and the starting distance. So having the color sensor in the front is deal to receive this information as the first input.
 
 ## 5.3 Gyro Sensor
 
