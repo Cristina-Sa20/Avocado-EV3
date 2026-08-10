@@ -1,0 +1,25 @@
+error = 0
+kp = 0
+kd = 0
+target = 0
+C = 0
+speed = 0
+Sensor.SetMode(1,0)
+
+While Motor.GetCount("b") <= degrees
+  
+  C = MotorC.GetTacho()
+  MotorB.SetPower(speed)
+  S1 = (Sensor.ReadPercent(1)- target)*8 
+  S2 = C
+  error = S1 - S2 
+  correction = (kp*error)+(kd*(error-lasterror))
+  correction1 = 1 - correction
+  Motor.StartPower("c",correction1)
+  lasterror = error 
+EndWhile
+
+
+
+ 
+  
