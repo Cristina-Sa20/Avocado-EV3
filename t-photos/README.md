@@ -1,5 +1,4 @@
-Team's photos
-====
+# Team's photos
 
 Welcome to the photo section, where we introduce the members of our group, Avocado.
 
@@ -12,3 +11,28 @@ Maria Salazar (Tall girl with curly hair)
 Coach (The one without a cap)
 
 <img width="510" height="660" alt="image" src="https://github.com/user-attachments/assets/46b62d95-a8b6-4700-b888-903fd7483186" />
+
+## Alan Stiven Saldaña Ortega
+
+Alan Saldaña is the head programmer and is the one in charge of programming and testing the changes in the robot's program.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/73aaac4c-3f05-482d-a55d-03e94fba7020" width="300">
+</p>
+
+## Hillary Abigail Cerrud Small
+
+Hillary Cerrud function in the team is being the head mechanic, having big attention for the little details of the robot.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/07573047-7466-4c5c-b499-c5ba49134728" width="300">
+</p>
+
+## Maria Cristina Salazar Guerra
+
+Maria Salazar works as a programmer for the team and is the one in charge of working on the Github files.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4bd56e44-b23d-44d1-a12a-c85057a0a9a8" width="300">
+</p>
+
