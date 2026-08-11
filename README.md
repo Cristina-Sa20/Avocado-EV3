@@ -112,6 +112,14 @@ After a week of evaluation we came down to the conclusion that we where going to
 
 After building it we decided to still use the ultrasonic sensor to know and help the robot locate itself in the field, we wanted it to be as autonomous as it could be, and it ended up being almost the same as having 2 ultrasonic sensor, we just trades 1 sensor slot for about 7 seconds that the robot uses doing the reading at the beginning of the rounds.
 
+## 1.4 Components 
+
+— LEGO EV3 Intelligent Brick
+
+Main controller. Processes sensor data and controls the motors.
+
+- EV3 Medium Motor
+
 ---
 
 # 2.Main Controller
