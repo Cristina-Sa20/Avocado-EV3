@@ -9,6 +9,6 @@ In this video, we can see how the autonomous vehicle completed the free-roaming 
 [![Watch video](https://img.youtube.com/vi/ajBkacQnERg/hqdefault.jpg)](https://youtube.com/shorts/ajBkacQnERg?feature=share)
 
 ## 2. First Round: Second Update
-We ran into a problem with the gyroscope: its readings would often change abruptly, causing the robot to veer off course. As a result, we decided to use the ultrasonic sensor to follow the wall. The result of the test code can be seen in the following video, where we managed to prevent the robot from accumulating errors.
+We ran into a problem with the gyroscope: its readings would often change abruptly, causing the robot to veer off course. As a result, we decided to use the ultrasonic sensor to follow the wall. The result of the test code can be seen in the following video, where we managed to prevent the robot from accumulating errors. (PD: We named the file for the first round “wall follower.”)
 
 [![Watch video](https://img.youtube.com/vi/UFrqMT3q9P4/maxresdefault.jpg)](https://youtu.be/UFrqMT3q9P4?si=ljdScA7mgKMssL3Y)
