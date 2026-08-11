@@ -112,7 +112,8 @@ After a week of evaluation we came down to the conclusion that we where going to
 
 After building it we decided to still use the ultrasonic sensor to know and help the robot locate itself in the field, we wanted it to be as autonomous as it could be, and it ended up being almost the same as having 2 ultrasonic sensor, we just trades 1 sensor slot for about 7 seconds that the robot uses doing the reading at the beginning of the rounds.
 
-
+## 1.4 Components
+The robot consists of a LEGO MINDSTORMS EV3 control system, three EV3 medium motors, an ultrasonic sensor, a colour sensor, a gyroscope, a Pixy2 camera, four wheels, an EV3 rechargeable battery and LEGO Technic structural components. Each component performs a specific function in the robot’s propulsion, steering, navigation, obstacle detection and control systems.
 
 ---
 
