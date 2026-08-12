@@ -66,3 +66,8 @@ The top view mainly shows the control unit and the connections for both the sens
 <p align="justify">
 From this perspective, we can see the vehicle’s mechanical components in detail, including both the front and rear wheels. The gear-driven transmission components and part of the mechanisms associated with steering and movement are visible, allowing us to understand how motion is mechanically transmitted and how it is integrated into the chassis.
 </p>
+
+## **Prototype 2**
+<p align="justify">
+Here, we kept almost the same structure, except that now, since we needed to position the camera for the third round, we changed the positions of some motors and improved the gyroscope's stability.
+</p>
