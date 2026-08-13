@@ -129,6 +129,9 @@ The EV3 is responsible for:
 - Controlling propulsion
 - Correcting the vehicle trajectory
 
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/24fbd5a3-4118-400f-88ea-1e4cbfaf9186" />
+
 ---
 
 # 3.Drive System
