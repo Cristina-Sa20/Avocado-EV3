@@ -145,6 +145,9 @@ This configuration provides:
 - Better traction
 - Independent motor control
 
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/fd2ab9c0-e092-40bb-ae14-d9954865237c" />
+
 ---
 
 # 4.Steering System
@@ -154,6 +157,9 @@ The steering system follows the Ackermann steering principle.
 A third EV3 Medium Motor controls the steering mechanism, allowing smooth turns while reducing wheel slipping during curves.
 
 This configuration improves turning accuracy and increases vehicle stability.
+
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/bf855d2f-2477-4fa9-b550-90d0ef3c7f2f" />
 
 ---
 
@@ -171,6 +177,9 @@ The second function is to detect both walls to determine which quadrant of the c
 
 We decided to place it in that position to give it mobility since, due to the limited number of sensors, we needed it to be mobile to help with the robot's automation. We also preferred to use it at the front because this helps us correct faster during turns, allowing the PD to work better.
 
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/7413f9ae-dd6d-4344-86a1-62844ace468a" />
+
+
 ## 5.2 Color Sensor
 The main function of the color sensor in the firs round is to count the blue and orange lines on the track to indicate how many sections the robot has gone through and when it's the last section so it can stop.
 In the second lap of the first round, and also in the obstacle round, its function is so detect the first line, whether blue or orange, to tell the robot if it needs to turn left or right.
@@ -178,6 +187,9 @@ In the second lap of the first round, and also in the obstacle round, its functi
 ¿Why did decide to put it in that position? 
 
 It´s  in that position because it's important that  this is the first input when the robot stars moving, since our robot's path heavily relies on floor  readings to determine the number of sections to travel, the turn direction, the robot's orientation, and the starting distance. So having the color sensor in the front is deal to receive this information as the first input.
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/702a3fb9-b5a4-4117-9ee8-860664435fd9" />
+
 
 ## 5.3 Gyro Sensor
 
@@ -190,12 +202,18 @@ This information allows:
 - More accurate turning
 - Reduction of accumulated steering error
 
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/46fcaa36-6cec-4f40-aac8-0108bf1b31d8" />
+
+
 ## 5.4 Pixy2 Camera
 Its main function is to detect obstacles and the color of those obstacles in order to avoid them. If it reads green, it will dodge to the left, and if it reads red, it will dodge to the right. 
 
 ¿Why did we decide to put it in that position?
 
 We placed it in that position because what we want with the camera is to be able to read the traffic light blocks inside the track from a good distance, but prioritizing that the reading is at an ideal distance to make maneuver. The main problem has been the angle since the camera must avoid reading outside the track because that could be harmful.
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/b794ad31-5a3d-48fc-9f57-cdeaeebc21ea" />
+
 
 # 6. Software
 
