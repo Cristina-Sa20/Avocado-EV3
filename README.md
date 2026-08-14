@@ -78,9 +78,11 @@ The robot continuously collects information from its sensors, processes that inf
 
 - First round open challenge:
 
+ <p align="center">
  <a href="https://youtube.com/shorts/ajBkacQnERg?feature=share">
-  <img src="https://img.youtube.com/vi/ajBkacQnERg/hqdefault.jpg" width="500">
-</a>
+   <img src="https://img.youtube.com/vi/ajBkacQnERg/hqdefault.jpg" width="500">
+  </a>
+</p>
 
 Second Update
 
