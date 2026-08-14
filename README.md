@@ -290,6 +290,8 @@ In this file, you'll find photos of the team, a section titled “About Us,” a
 This file contains photos of the two prototypes of our autonomous vehicle, taken from different angles, along with a brief explanation.
 
 ## 6.6 video
+
+When you open this file, you'll find some short videos and demonstration videos showing how the autonomous vehicle completes the competition rounds.
 ---
 
 # 7.Robot Construction
