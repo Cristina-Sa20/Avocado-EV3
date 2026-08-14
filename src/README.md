@@ -65,13 +65,24 @@ This routine represents one of the foundations of our wall-following strategy an
 
 Source code:
 
-C = MotorC.GetTacho() MotorB.SetPower(Speed) S1 = C S2 = (target - Sensor.ReadPercent(1)) × 8 error = S1 - S2 Correction = (kp × error) + (kd × (error - lasterror)) Correction1 = 1 - Correction Motor.StartPower("c", Correction1) lasterror = error
+While
+  
+  C = MotorC.GetTacho()
+  MotorB.SetPower(Speed)
+  S1 = C
+  S2 = (target -Sensor.ReadPercent(1)*8
+  error = S1 - S2
+  Correction = (kp*error)+(kd*(error-lasterror))
+  Correction1 = 1 - Correction
+  Motor.StartPower("c",Correction1)
+  lasterror = error
+  EndWhile
 
 Files:
 
-seguidorDePared.bp — View the programming logic.
+[seguidorDePared.bp — View the programming logic.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/CSDEG.bp)
 
-seguidor de pared 1.ev3 — EV3 program available for download in the src folder.
+[seguidor de pared 1.ev3 — EV3 program available for download in the src folder.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/seguidor%20de%20pared%20avocado.ev3)
 ---
 
 ## 2. `SeguidorDePared2`
@@ -88,12 +99,23 @@ The main purpose of this version was to obtain a more consistent relationship be
 
 Source code:
 
-C = MotorC.GetTacho() MotorB.SetPower(Speed) S1 = (Sensor.ReadPercent(1) - target) × 8 S2 = C error = S1 - S2 correction = (kp × error) + (kd × (error - lasterror)) correction1 = 1 - correction Motor.StartPower("c", correction1) lasterror = error
+While
+  
+  C = MotorC.GetTacho()
+  MotorB.SetPower(Speed)
+  S1 = (Sensor.ReadPercent(1)- target)*8
+  S2 = C
+  error = S1 -S2
+  correction = (kp*Error)+(kd*(error-lasterror))
+  correction1 = 1 - correction
+  Motor.StartPower("c",Correction1)
+  lasterror = error
+  EndWhile
 
 Files:
 
-SeguidorDePared2.bp — View the programming logic.
-seguidor de pared 2.ev3 — EV3 program available for download in the src folder.
+[SeguidorDePared2.bp — View the programming logic.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/SeguidorDePared2.bp)
+[seguidor de pared 2.ev3 — EV3 program available for download in the src folder.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/seguidor%20de%20pared%202.ev3)
 
 ---
 
