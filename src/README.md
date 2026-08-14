@@ -63,6 +63,14 @@ The PD controller then calculates the required steering correction. This allows 
 
 This routine represents one of the foundations of our wall-following strategy and was later modified to create improved versions.
 
+Source code:
+
+C = MotorC.GetTacho() MotorB.SetPower(Speed) S1 = C S2 = (target - Sensor.ReadPercent(1)) × 8 error = S1 - S2 Correction = (kp × error) + (kd × (error - lasterror)) Correction1 = 1 - Correction Motor.StartPower("c", Correction1) lasterror = error
+
+Files:
+
+seguidorDePared.bp — View the programming logic.
+seguidor de pared 1.ev3 — EV3 program available for download in the src folder.
 ---
 
 ## 2. `SeguidorDePared2`
@@ -76,6 +84,15 @@ This routine represents one of the foundations of our wall-following strategy an
 The error is calculated from the difference between these two values, and the resulting correction is applied to Motor C.
 
 The main purpose of this version was to obtain a more consistent relationship between the sensor reading and the steering angle while the robot was moving.
+
+Source code:
+
+C = MotorC.GetTacho() MotorB.SetPower(Speed) S1 = (Sensor.ReadPercent(1) - target) × 8 S2 = C error = S1 - S2 correction = (kp × error) + (kd × (error - lasterror)) correction1 = 1 - correction Motor.StartPower("c", correction1) lasterror = error
+
+Files:
+
+SeguidorDePared2.bp — View the programming logic.
+seguidor de pared 2.ev3 — EV3 program available for download in the src folder.
 
 ---
 
@@ -93,6 +110,15 @@ During this movement, Sensor 1 and Motor C are continuously compared, and the PD
 
 This routine was useful when we needed a controlled movement over a specific number of degrees.
 
+Source code:
+
+While Motor.GetCount("b") <= degrees C = MotorC.GetTacho() MotorB.SetPower(speed) S1 = (Sensor.ReadPercent(1) - target) × 8 S2 = C error = S1 - S2 correction = (kp × error) + (kd × (error - lasterror)) correction1 = 1 - correction Motor.StartPower("c", correction1) lasterror = error EndWhile
+
+Files:
+
+SSdeg.bp — View the programming logic.
+SSdeg.ev3 — EV3 program available for download in the src folder.
+
 ---
 
 ## 4. `SSdePared2`
@@ -106,6 +132,15 @@ The routine continuously checks the value of **Sensor 2** and only performs the 
 While this condition is true, Motor B moves the robot forward and Motor C adjusts the steering according to the PD controller.
 
 This routine was developed to handle specific situations on the competition field where the robot needed to follow a wall while also checking an additional sensor condition.
+
+Source code:
+
+While v > 50 and v < 90 or v > 135 and v < 180 v = Sensor.ReadPercent(2) C = MotorC.GetTacho() MotorB.SetPower(speed) S1 = (Sensor.ReadPercent(1) - target) × 8 S2 = C error = S1 - S2 correction = (kp × error) + (kd × (error - lasterror)) correction1 = 1 - correction Motor.StartPower("c", correction1) lasterror = error EndWhile
+
+Files:
+
+SSdePared2.bp — View the programming logic.
+SSdePared2.ev3 — EV3 program available for download in the src folder.
 
 ---
 
@@ -124,6 +159,15 @@ The main difference between this routine and `SSdeg` is the way the intermediate
 `S2 = (Sensor.ReadPercent(1) - target) × 8`
 
 This represents another iteration of our control strategy, developed through testing and adjustments.
+
+Source code:
+
+While Motor.GetCount("b") <= degrees C = MotorC.GetTacho() MotorB.SetPower(speed) S1 = C S2 = (Sensor.ReadPercent(1) - target) × 8 error = S1 - S2 correction = (kp × error) + (kd × (error - lasterror)) correction1 = 1 - correction Motor.StartPower("c", correction1) lasterror = error EndWhile
+
+Files:
+
+CSDEG.bp — View the programming logic.
+CSDEG.ev3 — EV3 program available for download in the src folder.
 
 ---
 
@@ -144,6 +188,15 @@ Unlike `SSdePared2`, the relationship between the sensor value and the motor tac
 `S2 = (target - Sensor.ReadPercent(1)) × 8`
 
 This difference changes the direction and behavior of the calculated error and was part of our testing process to determine which configuration provided the best performance.
+
+Source code:
+
+While v > 50 and v < 90 or v > 135 and v < 180 v = Sensor.ReadPercent(2) MotorB.SetPower(Speed) C = MotorC.GetTacho() S1 = C S2 = (target - Sensor.ReadPercent(1)) × 8 error = S1 - S2 Correction = (kp × error) + (kd × (error - lasterror)) Correction1 = 1 - Correction Motor.StartPower("c", Correction1) lasterror = error EndWhile
+
+Files:
+
+CSDePared.bp — View the programming logic.
+CSDePared.ev3 — EV3 program available for download in the src folder.
 
 ---
 
