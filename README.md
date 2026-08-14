@@ -9,7 +9,7 @@ The purpose of this repository is to document the complete engineering process f
 ---
 # 1.Presentation
 
-## Team Information
+## 1.1 Team Information
 
 **Team Name:** Avocado
 
@@ -23,9 +23,8 @@ The purpose of this repository is to document the complete engineering process f
 - Maria Salazar (19 years old)
 - Alan Saldaña (20 years old)
 
----
 
-# Project Description
+# 1.2 Project Description
 
 Team Avocado developed an autonomous vehicle capable of navigating the official WRO Future Engineers track without human intervention.
 
@@ -35,7 +34,7 @@ The robot continuously collects information from its sensors, processes that inf
 
 ---
 
-# 1.Hardware Design
+# 2.Hardware Design
 
 The robot was designed using LEGO Mindstorms EV3 components from LEGO´s base and expansion sets, combined with some 3D printed materials and as a third-party element a Pixy Camera.
 
@@ -50,7 +49,7 @@ Our design priorities were:
 
 Our chassis allows us a quick access to motors, sensors, and cables during testing and competition. We focused on an easy access to the different components of the robot maintaining a steady and reliable structure.
 
-## 1.1 Hardware Mechanisms
+## 2.1 Hardware Mechanisms
 
 Throught a lot of investigation, testing, evaluation and sketches we came down to this different mechanisms that were optimal and aligned with the vision we had for our robot:
 
@@ -92,7 +91,7 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
   Here are the Pros and Cons of each one
   2 ultrasonic
 
-## 1.2 Pros and Cons with 2 ultrasonic
+## 2.2 Pros and Cons with 2 ultrasonic
 
 | Pros | Cons | 
 | :--- | :---: |
@@ -101,7 +100,7 @@ Throught a lot of investigation, testing, evaluation and sketches we came down t
 
              
 
-## 1.3 Pros and Cons with 1 ultrasonic
+## 2.3 Pros and Cons with 1 ultrasonic
 
 | Pros | Cons | 
 | :--- | :---: |
@@ -113,12 +112,13 @@ After a week of evaluation we came down to the conclusion that we where going to
 
 After building it we decided to still use the ultrasonic sensor to know and help the robot locate itself in the field, we wanted it to be as autonomous as it could be, and it ended up being almost the same as having 2 ultrasonic sensor, we just trades 1 sensor slot for about 7 seconds that the robot uses doing the reading at the beginning of the rounds.
 
-## 1.4 Components
+## 2.4 Components
 The robot consists of a LEGO MINDSTORMS EV3 control system, three EV3 medium motors, an ultrasonic sensor, a colour sensor, a gyroscope, a Pixy2 camera, four wheels, an EV3 rechargeable battery and LEGO Technic structural components. Each component performs a specific function in the robot’s propulsion, steering, navigation, obstacle detection and control systems.
 
 ---
+# 3. Mobility Management
 
-# 2.Main Controller
+## 3.1 Main Controller
 
 The robot uses a LEGO Mindstorms EV3 intelligent brick as its central controller.
 
@@ -135,7 +135,7 @@ The EV3 is responsible for:
 
 ---
 
-# 3.Drive System
+## 3.2 Drive System
 
 The vehicle uses rear-wheel drive powered by two EV3 Medium Motors.
 
@@ -151,7 +151,7 @@ This configuration provides:
 
 ---
 
-# 4.Steering System
+## 3.3 Steering System
 
 The steering system follows the Ackermann steering principle.
 
@@ -164,11 +164,11 @@ This configuration improves turning accuracy and increases vehicle stability.
 
 ---
 
-# 5.Sensors
+# 4.Sensors
 This section explains the specifications of all sensors used for our robot.
 
 
-## 5.1 Ultrasonic Sensor
+## 4.1 Ultrasonic Sensor
 We mainly use the ultrasonic sensor for 2 specific functions:
 
 One of these functions is in PD correction, where the ultrasonic sensor detecs the nearest side wall and keeps the same distance it measured from the wall. 
@@ -181,7 +181,7 @@ We decided to place it in that position to give it mobility since, due to the li
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/7413f9ae-dd6d-4344-86a1-62844ace468a" />
 
 
-## 5.2 Color Sensor
+## 4.2 Color Sensor
 The main function of the color sensor in the firs round is to count the blue and orange lines on the track to indicate how many sections the robot has gone through and when it's the last section so it can stop.
 In the second lap of the first round, and also in the obstacle round, its function is so detect the first line, whether blue or orange, to tell the robot if it needs to turn left or right.
 
@@ -192,7 +192,7 @@ It´s  in that position because it's important that  this is the first input whe
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/702a3fb9-b5a4-4117-9ee8-860664435fd9" />
 
 
-## 5.3 Gyro Sensor
+## 4.3 Gyro Sensor
 
 The gyro sensor measures the robot's rotation angle.
 
@@ -206,7 +206,7 @@ This information allows:
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/46fcaa36-6cec-4f40-aac8-0108bf1b31d8" />
 
 
-## 5.4 Pixy2 Camera
+## 4.4 Pixy2 Camera
 Its main function is to detect obstacles and the color of those obstacles in order to avoid them. If it reads green, it will dodge to the left, and if it reads red, it will dodge to the right. 
 
 ¿Why did we decide to put it in that position?
@@ -216,7 +216,7 @@ We placed it in that position because what we want with the camera is to be able
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/b794ad31-5a3d-48fc-9f57-cdeaeebc21ea" />
 
 
-# 6. Software
+# 5. Software
 
 The software was developed specifically for the WRO Future Engineers challenges.
 
@@ -224,24 +224,26 @@ The program continuously executes a control loop where sensor information is acq
 
 The software is organized into modules to facilitate maintenance and future improvements.
 
+## 5.1
+
 ---
 
-# 7.Repository Structure
+# 6. Repository Structure
 
-## 7.1 src
+## 6.1 src
 
-## 7.2 schemes
+## 6.2 schemes
 
-## 7.3 models
+## 6.3 models
 
-## 7.4 t-photos
+## 6.4 t-photos
 
-## 7.5 v-photos
+## 6.5 v-photos
 
-## 7.6 video
+## 6.6 video
 ---
 
-# 8.Robot Construction
+# 7.Robot Construction
 
 The robot was assembled using LEGO structural components combined with a steering mechanism based on Ackermann geometry.
 
@@ -256,7 +258,7 @@ The modular design allows damaged components to be replaced quickly without rebu
 
 
 
-## 8.1 Power and voltage
+## 7.1 Power and voltage
 
 | Component | Voltage | Current (mA)|
 | :--- | :---: | ---: |
@@ -268,7 +270,7 @@ The modular design allows damaged components to be replaced quickly without rebu
 
 ---
 
-# 9.Testing
+# 8.Testing
 
 The robot was tested repeatedly before competition.
 
@@ -285,7 +287,7 @@ The testing process included:
 
 After every testing session, software and mechanical adjustments were performed to improve consistency.
 
-## 9.1 Test workflow
+## 8.1 Test workflow
 
 Our goal in every practice was to correct our mistakes. During the first few weeks of practice, we didn’t use any notes at all — we did everything from memory — but this method yielded mediocre results, as mistakes we thought we’d already corrected kept cropping up again.
 
@@ -293,7 +295,7 @@ Seeing this, we started taking notes: in a notebook, we wrote down the test numb
 
 We continued using this method until after the first competition, when we decided to create tables in our notes listing the speed, kp, and kd values, and began timing the runs. However, we also had a separate table with the same values from the second method (speed, lap description, and direction). Using the third method—with two tables—is where we’ve seen the best results, correcting errors more quickly than with the first two methods. We decided to include pk, and kd and quredtos are important components of the calibration.
 
-## 9.2 Test demonstration
+## 8.2 Test demonstration
 
 This section will provide a general explanation, using a comparative table, of how these practices have evolved.
 
@@ -304,7 +306,7 @@ This section will provide a general explanation, using a comparative table, of h
 | **Sensor Replacement** | 10 laps | 
 
 
-## 9.3 Metrics Counterclockwise with prototype 2
+## 8.3 Metrics Counterclockwise with prototype 2
 
 | Laps | Velocity |Kd | Kp| Time | Description |
 | :---:| :---: | :---:| :---:|:---:|:---:
@@ -316,7 +318,7 @@ This section will provide a general explanation, using a comparative table, of h
 |6| -100|-120|-20|1:08|
 
 
-## 9.4 Boundary cases
+## 8.4 Boundary cases
 
 There are several borderline cases that, as the name suggests, are unlikely to happen, but if these occur, they could be the following.
 
