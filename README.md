@@ -296,21 +296,17 @@ The control system is mainly based on a PD (Proportional-Derivative) controller,
 
 The main parameters used in our control system are:
 
-target – Desired sensor/reference value.
+* **`target`** – The desired sensor value or reference position that the robot tries to maintain.
+* **`speed` / `Speed`** – The power applied to the main driving motor.
+* **`kp`** – Proportional gain. It determines how strongly the robot reacts to the current error.
+* **`kd`** – Derivative gain. It determines how strongly the robot reacts to changes in the error, helping reduce sudden oscillations.
+* **`error`** – The difference between the desired condition and the current measured condition.
+* **`lasterror`** – The previous error value, used to calculate the derivative component.
+* **`correction`** – The value calculated by the PD controller.
+* **`correction1`** – The final correction applied to the steering motor.
+* **`C`** – The tachometer value obtained from Motor C, which provides information about the steering position.
+* **`S1` and `S2`** – Intermediate values used to compare the steering position with the sensor-based reference.
 
-speed – Power applied to the driving motor.
-
-kp – Proportional gain used to react to the current error.
-
-kd – Derivative gain used to react to changes in the error.
-
-error – Difference between the desired and measured values.
-
-lasterror – Previous error used by the derivative component.
-
-correction – PD control calculation.
-
-correction1 – Final steering correction sent to Motor C.
 
 The main control equation used in our routines is:
 
