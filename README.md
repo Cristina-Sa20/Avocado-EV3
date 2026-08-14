@@ -6,6 +6,46 @@ This repository contains the engineering materials of Team Avocado for the World
 
 The purpose of this repository is to document the complete engineering process followed during the design, construction, programming, testing, and improvement of our autonomous vehicle. Our objective is to make the project understandable and reproducible for judges, participants, and anyone interested in autonomous robotics.
 
+# Table of Contents
+
+# Table of Contents
+
+* [1. Presentation](#1-presentation)
+  * [1.1 Teams Information](#11-teams-information)
+  * [1.2 Project Description](#12-project-description)
+  * [1.3 Demonstration Videos](#13-demonstration-videos)
+* [2. Hardware Design](#2-hardware-design)
+  * [2.1 Hardware Mechanisms](#21-hardware-mechanisms)
+  * [2.2 Pros and Cons with 2 Ultrasonic](#22-pros-and-cons-with-2-ultrasonic)
+  * [2.3 Pros and Cons with 1 Ultrasonic](#23-pros-and-cons-with-1-ultrasonic)
+  * [2.4 Components](#24-components)
+* [3. Mobility Management](#3-mobility-management)
+  * [3.1 Main Controller](#31-main-controller)
+  * [3.2 Drive System](#32-drive-system)
+  * [3.3 Steering System](#33-steering-system)
+* [4. Sensors](#4-sensors)
+  * [4.1 Ultrasonic Sensor](#41-ultrasonic-sensor)
+  * [4.2 Color Sensor](#42-color-sensor)
+  * [4.3 Gyro Sensor](#43-gyro-sensor)
+  * [4.4 Pixy2 Camera](#44-pixy2-camera)
+* [5. Software](#5-software)
+  * [5.1 Organization](#51-organization)
+* [6. Repository Structure](#6-repository-structure)
+  * [6.1 src](#61-src)
+  * [6.2 schemes](#62-schemes)
+  * [6.3 models](#63-models)
+  * [6.4 t-photos](#64-t-photos)
+  * [6.5 v-photos](#65-v-photos)
+  * [6.6 video](#66-video)
+* [7. Robot Construction](#7-robot-construction)
+  * [7.1 Power and Voltage](#71-power-and-voltage)
+* [8. Testing](#8-testing)
+  * [8.1 Test Workflow](#81-test-workflow)
+  * [8.2 Test Demonstration](#82-test-demonstration)
+  * [8.3 Metrics Counterclockwise with Prototype 2](#83-metrics-counterclockwise-with-prototype-2)
+  * [8.4 Boundary Cases](#84-boundary-cases)
+* [9. Acknowledgements](#9-acknowledgements)
+
 ---
 # 1.Presentation
 
@@ -24,7 +64,7 @@ The purpose of this repository is to document the complete engineering process f
 - Alan Saldaña (20 years old)
 
 
-# 1.2 Project Description
+## 1.2 Project Description
 
 Team Avocado developed an autonomous vehicle capable of navigating the official WRO Future Engineers track without human intervention.
 
@@ -328,12 +368,6 @@ If the camera fails, it would be the most extreme case and that you least want, 
 
 If the color sensor stopped detecting the alteration that would be observed are the infinite revolutions, since with the color sensor we are guided by how many revolutions the robot must give and it can stop, but if this sensor the robot would enter a loop until it turned off manually.
 
----
-
-# Future Improvements
-
----
-# Demonstration Videos
 
 ---
 
