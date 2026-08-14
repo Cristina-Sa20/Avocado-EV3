@@ -64,7 +64,7 @@ The PD controller then calculates the required steering correction. This allows 
 This routine represents one of the foundations of our wall-following strategy and was later modified to create improved versions.
 
 
-Files:
+**Files:** 
 
 ### [seguidorDePared.bp — View the programming logic.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/CSDEG.bp)
 
