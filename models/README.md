@@ -26,6 +26,4 @@ The provided `.io` file includes the complete mechanical assembly of the robot. 
    * Generate step-by-step building instructions (`Instruction Maker`).
    * Export rendering images or modify the mechanical structure for future iterations.
 
----
 
-The file includes the complete robot assembly, allowing visualization and further modifications of the mechanical design.
