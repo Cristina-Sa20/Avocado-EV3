@@ -71,6 +71,8 @@ The vehicle is designed to complete both the Open Challenge and the Obstacle Cha
 
 The robot continuously collects information from its sensors, processes that information using the EV3 controller, and makes real-time decisions to maintain its trajectory and avoid obstacles.
 
+## 1.3 Demonstration Videos
+
 ---
 
 # 2.Hardware Design
