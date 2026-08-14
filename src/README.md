@@ -64,7 +64,7 @@ The PD controller then calculates the required steering correction. This allows 
 This routine represents one of the foundations of our wall-following strategy and was later modified to create improved versions.
 
 
-**Files:** 
+##**Files:** 
 
 ### [seguidorDePared.bp — View the programming logic.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/CSDEG.bp)
 
@@ -85,7 +85,7 @@ The main purpose of this version was to obtain a more consistent relationship be
 
 
 
-Files:
+##**Files:** 
 
 ### [SeguidorDePared2.bp — View the programming logic.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/SeguidorDePared2.bp)
 ### [seguidor de pared 2.ev3 — EV3 program available for download in the src folder.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/seguidor%20de%20pared%202.ev3)
@@ -108,10 +108,10 @@ This routine was useful when we needed a controlled movement over a specific num
 
 
 
-Files:
+##**Files:** 
 
-SSdeg.bp — View the programming logic.
-SSdeg.ev3 — EV3 program available for download in the src folder.
+### [SSdeg.bp — View the programming logic.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/SSdeg.bp)
+### [SSdeg.ev3 — EV3 program available for download in the src folder.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/SSdeg.ev3)
 
 ---
 
@@ -129,10 +129,10 @@ This routine was developed to handle specific situations on the competition fiel
 
 
 
-Files:
+##**Files:** 
 
-SSdePared2.bp — View the programming logic.
-SSdePared2.ev3 — EV3 program available for download in the src folder.
+### [SSdePared2.bp — View the programming logic.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/SSdePared2.bp)
+### [SSdePared2.ev3 — EV3 program available for download in the src folder.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/SSdePared2.ev3)
 
 ---
 
@@ -152,10 +152,9 @@ The main difference between this routine and `SSdeg` is the way the intermediate
 
 This represents another iteration of our control strategy, developed through testing and adjustments.
 
-Files:
-
-CSDEG.bp — View the programming logic.
-CSDEG.ev3 — EV3 program available for download in the src folder.
+##**Files:** 
+### [CSDEG.bp — View the programming logic.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/CSDEG.bp)
+### [CSDEG.ev3 — EV3 program available for download in the src folder.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/CSDEG.ev3)
 
 ---
 
@@ -178,10 +177,10 @@ Unlike `SSdePared2`, the relationship between the sensor value and the motor tac
 This difference changes the direction and behavior of the calculated error and was part of our testing process to determine which configuration provided the best performance.
 
 
-Files:
+##**Files:** 
 
-### CSDePared.bp — View the programming logic.
-### CSDePared.ev3 — EV3 program available for download in the src folder.
+### [CSDePared.bp — View the programming logic.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/CSDePared.bp)
+### [CSDePared.ev3 — EV3 program available for download in the src folder.](https://github.com/Cristina-Sa20/Avocado-EV3/blob/main/src/CSDePared.ev3)
 
 ---
 
