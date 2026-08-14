@@ -10,11 +10,11 @@ These diagrams show all the electronic components used in the vehicle, such as m
 The images clearly illustrate how each component is connected to the others via cables and ports.
 
 
-#Ports Connection
+# Connection Diagram & Port Mapping
 
 <img width="700" height="600" alt="Agregar un subtítulo" src="https://github.com/user-attachments/assets/8c0bfcf3-47a0-4274-86dc-b8c1934006e6" />
 
-## Connection Diagram & Port Mapping
+
 
 This diagram provides a clear visual guide showing how each motor and sensor is connected to the main controller hub ports.
 
