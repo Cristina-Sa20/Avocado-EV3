@@ -70,6 +70,7 @@ C = MotorC.GetTacho() MotorB.SetPower(Speed) S1 = C S2 = (target - Sensor.ReadPe
 Files:
 
 seguidorDePared.bp — View the programming logic.
+
 seguidor de pared 1.ev3 — EV3 program available for download in the src folder.
 ---
 
