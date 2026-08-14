@@ -10,6 +10,18 @@ Our programming was divided into three main versions, corresponding to the diffe
 
 The src folder contains the different programs used during the development of the robot. Since our goal is to make the project reproducible, we included both the .ev3 files used by the LEGO EV3 software and the .bp files containing the programming blocks. We also added explanations for the main programs to make their purpose and operation easier to understand.
 
+### Programming Versions and File Formats
+
+The repository contains both **`.bp`** and **`.ev3`** versions of our programs.
+
+The **`.bp` files** are included so that the programming logic can be inspected and documented in the repository. They allow the main routines, variables, equations, conditions, and control algorithms to be reviewed.
+
+The **`.ev3` files** are the programs used with the LEGO MINDSTORMS EV3 software. These files can be downloaded and opened in the EV3 programming environment to reproduce the corresponding program on the robot.
+
+Some programs are therefore represented by both formats. The `.bp` version is provided mainly for transparency and documentation, while the `.ev3` version allows the program to be directly opened and used in the EV3 environment.
+
+The repository also contains different versions of the wall-following program, including `seguidor de pared 1.ev3`, `seguidor de pared 2.ev3`, and `seguidor de pared avocado.ev3`. These files represent different iterations developed during testing.
+
 ## Main Control Logic
 
 Our control system is based mainly on a **PD (Proportional-Derivative) control algorithm**. This algorithm allows the robot to continuously compare the desired value (`target`) with the current sensor or motor position and calculate a correction to keep the robot's movement stable.
@@ -135,19 +147,7 @@ This difference changes the direction and behavior of the calculated error and w
 
 ---
 
-## Programming Versions and File Formats
 
-The repository contains both **`.bp`** and **`.ev3`** versions of our programs.
-
-The **`.bp` files** are included so that the programming logic can be inspected and documented in the repository. They allow the main routines, variables, equations, conditions, and control algorithms to be reviewed.
-
-The **`.ev3` files** are the programs used with the LEGO MINDSTORMS EV3 software. These files can be downloaded and opened in the EV3 programming environment to reproduce the corresponding program on the robot.
-
-Some programs are therefore represented by both formats. The `.bp` version is provided mainly for transparency and documentation, while the `.ev3` version allows the program to be directly opened and used in the EV3 environment.
-
-The repository also contains different versions of the wall-following program, including `seguidor de pared 1.ev3`, `seguidor de pared 2.ev3`, and `seguidor de pared avocado.ev3`. These files represent different iterations developed during testing.
-
----
 
 ## Reproducibility
 
