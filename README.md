@@ -285,7 +285,7 @@ The software is organized into modules to facilitate maintenance and future impr
 
 In this file, you'll find photos of the team, a section titled “About Us,” and a description of our roles within the team.
 
-## 7.5 v-photos
+## 6.5 v-photos
 
 This file contains photos of the two prototypes of our autonomous vehicle, taken from different angles, along with a brief explanation.
 
