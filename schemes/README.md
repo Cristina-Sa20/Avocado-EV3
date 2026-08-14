@@ -12,7 +12,7 @@ The images clearly illustrate how each component is connected to the others via 
 
 #Ports Connection
 
-<img width="300" height="300" alt="Agregar un subtítulo" src="https://github.com/user-attachments/assets/8c0bfcf3-47a0-4274-86dc-b8c1934006e6" />
+<img width="600" height="700" alt="Agregar un subtítulo" src="https://github.com/user-attachments/assets/8c0bfcf3-47a0-4274-86dc-b8c1934006e6" />
 
 ## Connection Diagram & Port Mapping
 
