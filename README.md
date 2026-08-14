@@ -6,7 +6,6 @@ This repository contains the engineering materials of Team Avocado for the World
 
 The purpose of this repository is to document the complete engineering process followed during the design, construction, programming, testing, and improvement of our autonomous vehicle. Our objective is to make the project understandable and reproducible for judges, participants, and anyone interested in autonomous robotics.
 
-# Table of Contents
 
 # Table of Contents
 
