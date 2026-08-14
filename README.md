@@ -76,8 +76,18 @@ The robot continuously collects information from its sensors, processes that inf
 
 ## 1.3 Demonstration Videos
 
-- First round open challenge: 
-- Second round: 
+- First round open challenge:
+
+  [![Watch video](https://img.youtube.com/vi/ajBkacQnERg/hqdefault.jpg)](https://youtube.com/shorts/ajBkacQnERg?feature=share)
+
+Second Update
+
+   [![Watch video](https://img.youtube.com/vi/UFrqMT3q9P4/maxresdefault.jpg)](https://youtu.be/UFrqMT3q9P4?si=ljdScA7mgKMssL3Y)
+
+  
+- Second round:
+
+  
 - Third Round Obstacle challenge: 
 
 ---
