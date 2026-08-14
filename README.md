@@ -365,6 +365,7 @@ Folder: v-photos
 This folder contains short videos and demonstrations of our autonomous vehicle during testing and competition practice.
 
 The videos show the robot performing different tasks, including autonomous movement, wall following, obstacle detection, steering, and complete competition rounds. They provide visual evidence of the robot's performance and the development of our control strategies.
+
 ---
 
 # 7.Robot Construction
