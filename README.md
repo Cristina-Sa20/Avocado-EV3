@@ -84,7 +84,11 @@ The robot continuously collects information from its sensors, processes that inf
 
 Second Update
 
-   [![Watch video](https://img.youtube.com/vi/UFrqMT3q9P4/maxresdefault.jpg)](https://youtu.be/UFrqMT3q9P4?si=ljdScA7mgKMssL3Y)
+  <p align="center">
+  <a href="https://youtu.be/UFrqMT3q9P4?si=ljdScA7mgKMssL3Y">
+    <img src="https://img.youtube.com/vi/UFrqMT3q9P4/maxresdefault.jpg" width="500">
+  </a>
+</p>
 
   
 - Second round:
