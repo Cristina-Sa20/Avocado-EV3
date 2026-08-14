@@ -297,12 +297,19 @@ The control system is mainly based on a PD (Proportional-Derivative) controller,
 The main parameters used in our control system are:
 
 target – Desired sensor/reference value.
+
 speed – Power applied to the driving motor.
+
 kp – Proportional gain used to react to the current error.
+
 kd – Derivative gain used to react to changes in the error.
+
 error – Difference between the desired and measured values.
+
 lasterror – Previous error used by the derivative component.
+
 correction – PD control calculation.
+
 correction1 – Final steering correction sent to Motor C.
 
 The main control equation used in our routines is:
