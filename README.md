@@ -322,21 +322,49 @@ For further information, please go to the folder: https://github.com/Cristina-Sa
 
 ## 6.1 src
 
+This folder contains the source code and executable EV3 programs used to control the autonomous vehicle. It includes the different iterations of our wall-following and steering routines in .bp and .ev3 formats, together with a detailed explanation of the control logic and programming structure.
+
+Folder: src/README.md
+
 ## 6.2 schemes
+
+This folder contains the technical schemes and diagrams of our robot. These files show the mechanical structure, component placement, connections, and other technical details used during the design and construction of the autonomous vehicle.
+
+The schemes are provided as a reference for understanding how the different components are organized and connected.
+
+Folder: schemes
+
+
 
 ## 6.3 models
 
+This folder contains the digital models and design references used during the development of the robot.
+
+Folder: models
+
 ## 6.4 t-photos
 
-In this file, you'll find photos of the team, a section titled “About Us,” and a description of our roles within the team.
+This folder contains photographs of the team, including the “About Us” section and information about the roles and responsibilities of each team member.
+
+These photos document the people involved in the development of the project and the organization of the team.
+
+Folder: t-photos
+
 
 ## 6.5 v-photos
 
-This file contains photos of the two prototypes of our autonomous vehicle, taken from different angles, along with a brief explanation.
+This folder contains photographs of the different prototypes of our autonomous vehicle. The prototypes are shown from different angles, accompanied by visual references that document the evolution of the robot throughout the development process.
+
+These images allow the changes made to the mechanical structure and component arrangement to be compared between prototypes.
+
+Folder: v-photos
+
 
 ## 6.6 video
 
-When you open this file, you'll find some short videos and demonstration videos showing how the autonomous vehicle completes the competition rounds.
+This folder contains short videos and demonstrations of our autonomous vehicle during testing and competition practice.
+
+The videos show the robot performing different tasks, including autonomous movement, wall following, obstacle detection, steering, and complete competition rounds. They provide visual evidence of the robot's performance and the development of our control strategies.
 ---
 
 # 7.Robot Construction
