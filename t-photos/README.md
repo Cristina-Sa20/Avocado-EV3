@@ -36,3 +36,7 @@ Maria Salazar works as a programmer for the team and is the one in charge of wor
   <img src="https://github.com/user-attachments/assets/4bd56e44-b23d-44d1-a12a-c85057a0a9a8" width="300">
 </p>
 
+## About us 
+<p align="justify">
+We are currently second-year marine biology students who are passionate about robotics and research. We are a very close-knit team that always tries to understand one another and support each other in any way we can. Our skills, developed in different areas, complement one another. Joining the robotics club was a productive way for us to spend our time in college, as well as a challenge that fosters our creativity, problem-solving, and organizational skills. Although we joined with no prior knowledge of robotics, I’d say we’re defined by our resilience and perseverance in acquiring the knowledge we needed to write the code. We also received great support from our mentors, who helped us clarify any questions that came up along the way. 
+</p>
