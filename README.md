@@ -290,7 +290,28 @@ The program continuously executes a control loop where sensor information is acq
 
 The software is organized into modules to facilitate maintenance and future improvements.
 
-## 5.1
+## 5.1 Control Software
+
+The control system is mainly based on a PD (Proportional-Derivative) controller, which continuously compares the desired value with the current sensor and steering position. Based on this difference, the program calculates an error and generates a correction for the steering motor.
+
+The main parameters used in our control system are:
+
+target – Desired sensor/reference value.
+speed – Power applied to the driving motor.
+kp – Proportional gain used to react to the current error.
+kd – Derivative gain used to react to changes in the error.
+error – Difference between the desired and measured values.
+lasterror – Previous error used by the derivative component.
+correction – PD control calculation.
+correction1 – Final steering correction sent to Motor C.
+
+The main control equation used in our routines is:
+
+correction = (kp × error) + (kd × (error - lasterror))
+
+The resulting correction is applied to the steering motor, while the driving motor maintains the forward movement.
+
+For further information, please go to the folder: https://github.com/Cristina-Sa20/Avocado-EV3/tree/main/src
 
 ---
 
