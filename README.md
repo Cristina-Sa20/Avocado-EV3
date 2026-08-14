@@ -73,6 +73,10 @@ The robot continuously collects information from its sensors, processes that inf
 
 ## 1.3 Demonstration Videos
 
+- First round open challenge: 
+- Second round: 
+- Third Round Obstacle challenge: 
+
 ---
 
 # 2.Hardware Design
