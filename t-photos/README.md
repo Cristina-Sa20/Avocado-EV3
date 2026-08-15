@@ -25,7 +25,7 @@ Alan Saldaña is the head programmer and is the one in charge of programming and
 Hillary Cerrud function in the team is being the head mechanic, having big attention for the little details of the robot.
 
 <p align="center">
-  <img width="300" height="200" alt="IMG_7364" src="https://github.com/user-attachments/assets/07573047-7466-4c5c-b499-c5ba49134728" />
+  <img width="400" height="280" alt="IMG_7364" src="https://github.com/user-attachments/assets/07573047-7466-4c5c-b499-c5ba49134728" />
 </p>
 
 ## Maria Cristina Salazar Guerra
@@ -40,7 +40,10 @@ Maria Salazar works as a programmer for the team and is the one in charge of wor
 <p align="center">
   <img src="Foto2.png" width="300">
 </p>
- 
+<p align="justify">
+Despite the stressful moments we went through, when something didn't go right or we spent an entire day unable to fix a problem, we tried to find a moment to clear our minds, have a little fun, and relax. That way, we could see things from a different perspective and keep moving forward. It's worth noting that we don't take many photos; putting our cell phones aside while we worked was almost second nature. Sometimes it could be quite a relaxing experience. 
+</p>
+
 ## About us 
 <p align="justify">
 We are currently second-year marine biology students who are passionate about robotics and research. We are a very close-knit team that always tries to understand one another and support each other in any way we can. Our skills, developed in different areas, complement one another. Joining the robotics club was a productive way for us to spend our time in college, as well as a challenge that fosters our creativity, problem-solving, and organizational skills. Although we joined with no prior knowledge of robotics, I’d say we’re defined by our resilience and perseverance in acquiring the knowledge we needed to write the code. We also received great support from our mentors, who helped us clarify any questions that came up along the way. 
