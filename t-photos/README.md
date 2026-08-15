@@ -25,7 +25,7 @@ Alan Saldaña is the head programmer and is the one in charge of programming and
 Hillary Cerrud function in the team is being the head mechanic, having big attention for the little details of the robot.
 
 <p align="center">
-  <img width="300" height="300" alt="IMG_7364" src="https://github.com/user-attachments/assets/07573047-7466-4c5c-b499-c5ba49134728" />
+  <img width="300" height="200" alt="IMG_7364" src="https://github.com/user-attachments/assets/07573047-7466-4c5c-b499-c5ba49134728" />
 </p>
 
 ## Maria Cristina Salazar Guerra
