@@ -7,6 +7,8 @@ This directory contains the 3D model of the robot designed in LEGO Studio 2.0.
 **Format:** `.io` (BrickLink Studio native format)
 **Software Required:** [BrickLink Studio 2.0](https://www.bricklink.com/v3/studio/download.page) (Free download)
 
+**PDF:** In the PDF, you'll find a step-by-step visual guide to building the robot.
+
 ##  Model Details
 
 The provided `.io` file includes the complete mechanical assembly of the robot. It serves as a visual and functional guide to understand the physical architecture before assembly or reproduction.
