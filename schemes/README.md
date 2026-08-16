@@ -24,6 +24,7 @@ This diagram provides a clear visual guide showing how each motor and sensor is 
 * **Port D:** Connected to the **Ultrasonic Sensor Mechanism Motor**  — moves/rotates the ultrasonic sensor independently.
 
 #### Sensor Ports (Input Ports: 1, 2, 3, 4)
+* **Port 1:** Connected to the **Pixy Camera** — detects the proximity of objects and their color.
 * **Port 2:** Connected to the **Color Sensor** — detects lines, colors, or boundaries on the track.
 * **Port 3:** Connected to the **Ultrasonic Sensor** — measures distance to obstacles and walls.
 * **Port 4:** Connected to the **Gyro Sensor** — keeps track of the robot's orientation and rotation angles.
