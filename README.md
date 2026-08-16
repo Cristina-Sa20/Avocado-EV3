@@ -381,7 +381,7 @@ Particular attention was given to:
 
 The modular design allows damaged components to be replaced quickly without rebuilding the complete vehicle.
 
-
+In the “Models” folder, you'll find a complete guide on how to assemble the robot, including a 3D model and a visual guide in PDF format.
 
 ## 7.1 Power and voltage
 
