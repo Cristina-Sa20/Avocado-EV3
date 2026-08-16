@@ -28,7 +28,7 @@ The purpose of this repository is to document the complete engineering process f
   * [4.3 Gyro Sensor](#43-gyro-sensor)
   * [4.4 Pixy2 Camera](#44-pixy2-camera)
 * [5. Software](#5-software)
-  * [5.1 Organization](#51-organization)
+  * [5.1 Control Software](#51-control-software)
 * [6. Repository Structure](#6-repository-structure)
   * [6.1 src](#61-src)
   * [6.2 schemes](#62-schemes)
