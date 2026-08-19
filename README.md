@@ -61,7 +61,6 @@ The purpose of this repository is to document the complete engineering process f
 - Hillary Cerrud (20 years old)
 - Maria Salazar (19 years old)
 - Alan Saldaña (20 years old)
-- Pepita (Robot- 3 months) The most important member.
 
   <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/42f1640d-b047-4461-9aca-ed85e651d9a9" />
 
